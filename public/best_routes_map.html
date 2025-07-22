@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd13a3b01fdb86e538284915788eb44d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd13a3b01fdb86e538284915788eb44d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd13a3b01fdb86e538284915788eb44d = L.map(
+                "map_dd13a3b01fdb86e538284915788eb44d",
+                {
+                    center: [12.7969243, 77.3632306],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d460ab81dad51564ba09249af0c56846 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d460ab81dad51564ba09249af0c56846.addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var poly_line_4e65d644a0db0366bd8437d2bd214137 = L.polyline(
+                [[12.7969243, 77.3632306], [12.9358065116189, 77.5176953616907], [12.7969243, 77.3632306], [12.9582868820923, 77.5535338891652], [12.9830365500579, 77.6067105303472], [13.0454051684883, 77.6267973821806], [13.0713049078925, 77.6511915424798], [13.1221009980649, 77.6307057241662], [13.1522973572038, 77.6209009811191], [12.9782004276796, 77.6379021223757], [12.9119149935457, 77.6381905481637], [12.910785071, 77.685602903357], [12.841702570503, 77.6479001242934], [12.841702047645, 77.6783790789686], [12.8757705343029, 77.5957312931513], [12.7969243, 77.3632306]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var marker_ed92423b269655361e68b8ed98623182 = L.marker(
+                [12.9358065116189, 77.5176953616907],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_159f9b1a7ed02e2f4f42611d0533b82b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ed92423b269655361e68b8ed98623182.bindTooltip(
+                `<div>
+                     Kenchenhalli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed92423b269655361e68b8ed98623182.setIcon(icon_159f9b1a7ed02e2f4f42611d0533b82b);
+            
+    
+            var marker_023d7836f4521f5505464d08004196c1 = L.marker(
+                [12.7969243, 77.3632306],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_98308a0ba0da6d55a0f134f687a6c352 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_023d7836f4521f5505464d08004196c1.bindTooltip(
+                `<div>
+                     Bidadi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_023d7836f4521f5505464d08004196c1.setIcon(icon_98308a0ba0da6d55a0f134f687a6c352);
+            
+    
+            var marker_fe8bc87c6f7ec372ec992917b8fb7ef4 = L.marker(
+                [12.9582868820923, 77.5535338891652],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_2d5a8932d46e64203bb049506e9b9c02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fe8bc87c6f7ec372ec992917b8fb7ef4.bindTooltip(
+                `<div>
+                     Mysore Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe8bc87c6f7ec372ec992917b8fb7ef4.setIcon(icon_2d5a8932d46e64203bb049506e9b9c02);
+            
+    
+            var marker_4af7c649a49da13e2142735e1301f4b6 = L.marker(
+                [12.9830365500579, 77.6067105303472],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_38be23fd3724f697d8dc2366616401b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4af7c649a49da13e2142735e1301f4b6.bindTooltip(
+                `<div>
+                     Commercial Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4af7c649a49da13e2142735e1301f4b6.setIcon(icon_38be23fd3724f697d8dc2366616401b0);
+            
+    
+            var marker_381e997ae10ea393681b1756e7075378 = L.marker(
+                [13.0454051684883, 77.6267973821806],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_1edb063572d9bba5be0cb2da5e67b837 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_381e997ae10ea393681b1756e7075378.bindTooltip(
+                `<div>
+                     Thanisandra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_381e997ae10ea393681b1756e7075378.setIcon(icon_1edb063572d9bba5be0cb2da5e67b837);
+            
+    
+            var marker_185b946fda0ecbc2fcfa5c7517f38dc6 = L.marker(
+                [13.0713049078925, 77.6511915424798],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_2223814bf1edd707cf85d1dd9ab0d31e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_185b946fda0ecbc2fcfa5c7517f38dc6.bindTooltip(
+                `<div>
+                     Kothanur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_185b946fda0ecbc2fcfa5c7517f38dc6.setIcon(icon_2223814bf1edd707cf85d1dd9ab0d31e);
+            
+    
+            var marker_09718eee9b9e2660ef81b2b6573aac6f = L.marker(
+                [13.1221009980649, 77.6307057241662],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_09a158d4031461814823aad59bb576f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_09718eee9b9e2660ef81b2b6573aac6f.bindTooltip(
+                `<div>
+                     Kattigenahalli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09718eee9b9e2660ef81b2b6573aac6f.setIcon(icon_09a158d4031461814823aad59bb576f7);
+            
+    
+            var marker_1bd39db859cdff45c3bce282cdaeed16 = L.marker(
+                [13.1522973572038, 77.6209009811191],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_86344df5c5d3c09a0f27c6656e11cd1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1bd39db859cdff45c3bce282cdaeed16.bindTooltip(
+                `<div>
+                     Betthalusur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1bd39db859cdff45c3bce282cdaeed16.setIcon(icon_86344df5c5d3c09a0f27c6656e11cd1f);
+            
+    
+            var marker_154eb2595b747520649bfff50f02dc91 = L.marker(
+                [12.9782004276796, 77.6379021223757],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_533755121d1861acbde35cebf45665d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_154eb2595b747520649bfff50f02dc91.bindTooltip(
+                `<div>
+                     Indiranagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_154eb2595b747520649bfff50f02dc91.setIcon(icon_533755121d1861acbde35cebf45665d7);
+            
+    
+            var marker_2ddef81014ba4072baedb4682f7150dd = L.marker(
+                [12.9119149935457, 77.6381905481637],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_97cc2e9b7abbc5a39603c327ee7a7c37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2ddef81014ba4072baedb4682f7150dd.bindTooltip(
+                `<div>
+                     Sector 6 HSR Layout
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ddef81014ba4072baedb4682f7150dd.setIcon(icon_97cc2e9b7abbc5a39603c327ee7a7c37);
+            
+    
+            var marker_3f7fb695cbb9aa3140c16060b43bbda8 = L.marker(
+                [12.910785071, 77.685602903357],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_94c9cf1dfacb733d5964af9654cc1574 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3f7fb695cbb9aa3140c16060b43bbda8.bindTooltip(
+                `<div>
+                     Doddakannelli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f7fb695cbb9aa3140c16060b43bbda8.setIcon(icon_94c9cf1dfacb733d5964af9654cc1574);
+            
+    
+            var marker_d91917d4e5cc63e26b6aee72c64e30d6 = L.marker(
+                [12.841702570503, 77.6479001242934],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_d2b6265ef0d947a19383193f08d98ba4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d91917d4e5cc63e26b6aee72c64e30d6.bindTooltip(
+                `<div>
+                     Karuna Nagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d91917d4e5cc63e26b6aee72c64e30d6.setIcon(icon_d2b6265ef0d947a19383193f08d98ba4);
+            
+    
+            var marker_986b30b719ba277aecdb1d6e34a3f0c5 = L.marker(
+                [12.841702047645, 77.6783790789686],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_4db713418cab232d4c461371e85f1a2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_986b30b719ba277aecdb1d6e34a3f0c5.bindTooltip(
+                `<div>
+                     Veerasandra Industrial Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_986b30b719ba277aecdb1d6e34a3f0c5.setIcon(icon_4db713418cab232d4c461371e85f1a2b);
+            
+    
+            var marker_01c805958b185f57ebbc0b9f2cf42e3a = L.marker(
+                [12.8757705343029, 77.5957312931513],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_df197314a5b8a7f27e6be4fd17ac57e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_01c805958b185f57ebbc0b9f2cf42e3a.bindTooltip(
+                `<div>
+                     Hulimavu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01c805958b185f57ebbc0b9f2cf42e3a.setIcon(icon_df197314a5b8a7f27e6be4fd17ac57e8);
+            
+    
+            var poly_line_708ef144f9b7fc52f5c18732e95c9ccb = L.polyline(
+                [[12.7969243, 77.3632306], [13.0697414859862, 77.5040327757507], [13.0206646203304, 77.5925076053328], [13.0225171442091, 77.6373174413949], [12.9967841289756, 77.6966020668336], [12.9592968913891, 77.7471059930483], [13.0546980928408, 77.7634003682897], [13.0206963717119, 77.684497833243], [12.9929954008008, 77.6618892273101], [12.9655091932701, 77.7018006405747], [12.9871211535591, 77.7364988727604], [12.9965543483844, 77.6955464749233], [12.9737017661444, 77.5517004364069], [12.9681013385046, 77.5360192367226], [12.9402576630123, 77.5250099897962], [12.7969243, 77.3632306]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var marker_7de642697b50f632798b743d52caa0ae = L.marker(
+                [13.0697414859862, 77.5040327757507],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_460c65ab643ca1bf8f124781a4795e60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7de642697b50f632798b743d52caa0ae.bindTooltip(
+                `<div>
+                     Chikkasandra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7de642697b50f632798b743d52caa0ae.setIcon(icon_460c65ab643ca1bf8f124781a4795e60);
+            
+    
+            var marker_f66c5206194b5afacac24a8e99c006e0 = L.marker(
+                [13.0206646203304, 77.5925076053328],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_01d1c9ee323cf480a7b6207c1c0af8c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f66c5206194b5afacac24a8e99c006e0.bindTooltip(
+                `<div>
+                     RT Nagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f66c5206194b5afacac24a8e99c006e0.setIcon(icon_01d1c9ee323cf480a7b6207c1c0af8c8);
+            
+    
+            var marker_69cc6b78e91f992d242092d5d181bf48 = L.marker(
+                [13.0225171442091, 77.6373174413949],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_3983990ae9f31d94cece7861443964d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_69cc6b78e91f992d242092d5d181bf48.bindTooltip(
+                `<div>
+                     Kammanahalli Main Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69cc6b78e91f992d242092d5d181bf48.setIcon(icon_3983990ae9f31d94cece7861443964d2);
+            
+    
+            var marker_c300d218858d71acf5e267fd08f9c1c2 = L.marker(
+                [12.9967841289756, 77.6966020668336],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_296dce86317459aa4ede48905a32a9cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c300d218858d71acf5e267fd08f9c1c2.bindTooltip(
+                `<div>
+                     Mahadevapura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c300d218858d71acf5e267fd08f9c1c2.setIcon(icon_296dce86317459aa4ede48905a32a9cd);
+            
+    
+            var marker_7b7677368bcedb704d002cfd86b2f72a = L.marker(
+                [12.9592968913891, 77.7471059930483],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_272dbf3731aaa3c1a7e881f58ca4ea40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7b7677368bcedb704d002cfd86b2f72a.bindTooltip(
+                `<div>
+                     Whitefield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7b7677368bcedb704d002cfd86b2f72a.setIcon(icon_272dbf3731aaa3c1a7e881f58ca4ea40);
+            
+    
+            var marker_80c6417acdc2069068e653f746a3f225 = L.marker(
+                [13.0546980928408, 77.7634003682897],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_7b992befd75f4ca9056d7b986bc2b3e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_80c6417acdc2069068e653f746a3f225.bindTooltip(
+                `<div>
+                     Huskur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80c6417acdc2069068e653f746a3f225.setIcon(icon_7b992befd75f4ca9056d7b986bc2b3e1);
+            
+    
+            var marker_676f9096ccdd8d1ae3ef8da35e8e1fde = L.marker(
+                [13.0206963717119, 77.684497833243],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_9ce2a9e9faf3ef2d77bce7963fc6e102 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_676f9096ccdd8d1ae3ef8da35e8e1fde.bindTooltip(
+                `<div>
+                     Jinkethimmanahalli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_676f9096ccdd8d1ae3ef8da35e8e1fde.setIcon(icon_9ce2a9e9faf3ef2d77bce7963fc6e102);
+            
+    
+            var marker_50df0341a9f07697fd5af4eabf169e0c = L.marker(
+                [12.9929954008008, 77.6618892273101],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_3f4dd452946944e28225ade94d688429 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_50df0341a9f07697fd5af4eabf169e0c.bindTooltip(
+                `<div>
+                     Swami Vivekananda Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50df0341a9f07697fd5af4eabf169e0c.setIcon(icon_3f4dd452946944e28225ade94d688429);
+            
+    
+            var marker_fb70886ea5d398aa7a2ef08b97bdbd87 = L.marker(
+                [12.9655091932701, 77.7018006405747],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_fc4e4f8184077fd28ceecfaa74f37b2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fb70886ea5d398aa7a2ef08b97bdbd87.bindTooltip(
+                `<div>
+                     Marathahalli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb70886ea5d398aa7a2ef08b97bdbd87.setIcon(icon_fc4e4f8184077fd28ceecfaa74f37b2a);
+            
+    
+            var marker_b72e4e0ca00dfedf759a58bf48a4b1c8 = L.marker(
+                [12.9871211535591, 77.7364988727604],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_4a96e2575b06e3368ced131a778531df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b72e4e0ca00dfedf759a58bf48a4b1c8.bindTooltip(
+                `<div>
+                     Whitefield Main Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b72e4e0ca00dfedf759a58bf48a4b1c8.setIcon(icon_4a96e2575b06e3368ced131a778531df);
+            
+    
+            var marker_9199524bf8b70b77d200d91c76fbdd41 = L.marker(
+                [12.9965543483844, 77.6955464749233],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_1745140267935f77082830b13e0df7f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9199524bf8b70b77d200d91c76fbdd41.bindTooltip(
+                `<div>
+                     Dyvasandra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9199524bf8b70b77d200d91c76fbdd41.setIcon(icon_1745140267935f77082830b13e0df7f1);
+            
+    
+            var marker_3eebc52c92388d49999d532d18b59c91 = L.marker(
+                [12.9737017661444, 77.5517004364069],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_5c2063dd220df132e86b95ff22d300b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3eebc52c92388d49999d532d18b59c91.bindTooltip(
+                `<div>
+                     Magadi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3eebc52c92388d49999d532d18b59c91.setIcon(icon_5c2063dd220df132e86b95ff22d300b0);
+            
+    
+            var marker_5d82f6ed39b090999ce57cd3aef1c5d0 = L.marker(
+                [12.9681013385046, 77.5360192367226],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_913a9704c0543f7785fea62289126941 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5d82f6ed39b090999ce57cd3aef1c5d0.bindTooltip(
+                `<div>
+                     Vijayanagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d82f6ed39b090999ce57cd3aef1c5d0.setIcon(icon_913a9704c0543f7785fea62289126941);
+            
+    
+            var marker_524b92b72188740518ebf2a76baad77b = L.marker(
+                [12.9402576630123, 77.5250099897962],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_2755ec32c8d43e53f35a0dd90c672a51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_524b92b72188740518ebf2a76baad77b.bindTooltip(
+                `<div>
+                     Nayanda Halli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_524b92b72188740518ebf2a76baad77b.setIcon(icon_2755ec32c8d43e53f35a0dd90c672a51);
+            
+    
+            var poly_line_651b73c7dd8d509e7ef2e1aa9f4c3581 = L.polyline(
+                [[12.7969243, 77.3632306], [13.0984270523309, 77.5736345596058], [13.0784386290092, 77.5590553656956], [13.0947057973971, 77.5949010427463], [13.0719040320186, 77.5923717069286], [13.0285212377652, 77.5712022935135], [13.010854589168, 77.5549191810303], [12.9973027985594, 77.5478027843354], [12.9920967698701, 77.5709945102594], [12.9816082320188, 77.5630964290296], [12.9344997603439, 77.6112953660067], [12.9279601115214, 77.5883024185806], [12.9074979072173, 77.6011985705485], [12.9351046982865, 77.6134020502009], [12.9472988464955, 77.5685995588955], [12.8854788026549, 77.5636895043175], [12.7969243, 77.3632306]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var marker_7aab665b901bc2c5791b61d54ea3d454 = L.marker(
+                [13.0984270523309, 77.5736345596058],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_94b6a834fe5af06ec75ade91c61e4342 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7aab665b901bc2c5791b61d54ea3d454.bindTooltip(
+                `<div>
+                     Yelahanka New Town
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7aab665b901bc2c5791b61d54ea3d454.setIcon(icon_94b6a834fe5af06ec75ade91c61e4342);
+            
+    
+            var marker_a230e4ae51fc9341f46a254826a50477 = L.marker(
+                [13.0784386290092, 77.5590553656956],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_d4430dca2659a92803be3a7f58b4a81e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a230e4ae51fc9341f46a254826a50477.bindTooltip(
+                `<div>
+                     Vidyaranyapura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a230e4ae51fc9341f46a254826a50477.setIcon(icon_d4430dca2659a92803be3a7f58b4a81e);
+            
+    
+            var marker_142eb0c942784b2a1012f7395a5240f5 = L.marker(
+                [13.0947057973971, 77.5949010427463],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_a36ddffeceaf5de7e6a72007cefca159 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_142eb0c942784b2a1012f7395a5240f5.bindTooltip(
+                `<div>
+                     Yelahanka_1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_142eb0c942784b2a1012f7395a5240f5.setIcon(icon_a36ddffeceaf5de7e6a72007cefca159);
+            
+    
+            var marker_298d806e9e85d7df04093bc7ab372f08 = L.marker(
+                [13.0719040320186, 77.5923717069286],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_2d6b8168c34ea68366ce4d55c003d8eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_298d806e9e85d7df04093bc7ab372f08.bindTooltip(
+                `<div>
+                     Yelahanka_2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_298d806e9e85d7df04093bc7ab372f08.setIcon(icon_2d6b8168c34ea68366ce4d55c003d8eb);
+            
+    
+            var marker_5cdcf4101e2a542f34b61c7b6b497f55 = L.marker(
+                [13.0285212377652, 77.5712022935135],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_c864fc10bc55d220d546818770c87886 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5cdcf4101e2a542f34b61c7b6b497f55.bindTooltip(
+                `<div>
+                     New BEL Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5cdcf4101e2a542f34b61c7b6b497f55.setIcon(icon_c864fc10bc55d220d546818770c87886);
+            
+    
+            var marker_15af922c307e585857f4f54aa081d7f0 = L.marker(
+                [13.010854589168, 77.5549191810303],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_34d9602fb943da64151c6b9fc3de0166 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_15af922c307e585857f4f54aa081d7f0.bindTooltip(
+                `<div>
+                     Dr Rajkumar Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15af922c307e585857f4f54aa081d7f0.setIcon(icon_34d9602fb943da64151c6b9fc3de0166);
+            
+    
+            var marker_1942d24694a164145761f34197b41d23 = L.marker(
+                [12.9973027985594, 77.5478027843354],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_0623da3a400e35f2e5c2d7ab627a9db7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1942d24694a164145761f34197b41d23.bindTooltip(
+                `<div>
+                     WCR Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1942d24694a164145761f34197b41d23.setIcon(icon_0623da3a400e35f2e5c2d7ab627a9db7);
+            
+    
+            var marker_683cb69d369f2f44cf9dc06062cfc730 = L.marker(
+                [12.9920967698701, 77.5709945102594],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_00e785e6f3f4274a3f2508a11f41c96b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_683cb69d369f2f44cf9dc06062cfc730.bindTooltip(
+                `<div>
+                     Malleshwaram
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_683cb69d369f2f44cf9dc06062cfc730.setIcon(icon_00e785e6f3f4274a3f2508a11f41c96b);
+            
+    
+            var marker_5327b560549b1d9f7ae86d66dbaba164 = L.marker(
+                [12.9816082320188, 77.5630964290296],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_e11f0db9d17e8b4e5de9087009d4bb56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5327b560549b1d9f7ae86d66dbaba164.bindTooltip(
+                `<div>
+                     Gopalapura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5327b560549b1d9f7ae86d66dbaba164.setIcon(icon_e11f0db9d17e8b4e5de9087009d4bb56);
+            
+    
+            var marker_d537311e88304ac9d0d5aa3d09f7a02f = L.marker(
+                [12.9344997603439, 77.6112953660067],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_cb2df6f6061c92d6ff64b2390dc18349 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d537311e88304ac9d0d5aa3d09f7a02f.bindTooltip(
+                `<div>
+                     Koramangala_1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d537311e88304ac9d0d5aa3d09f7a02f.setIcon(icon_cb2df6f6061c92d6ff64b2390dc18349);
+            
+    
+            var marker_72839b881a2c6e40b1f85ce814bf150d = L.marker(
+                [12.9279601115214, 77.5883024185806],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_4390255c68606ae77848f0caa4f2310f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_72839b881a2c6e40b1f85ce814bf150d.bindTooltip(
+                `<div>
+                     Jayanagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72839b881a2c6e40b1f85ce814bf150d.setIcon(icon_4390255c68606ae77848f0caa4f2310f);
+            
+    
+            var marker_76959ec426b898f5fba95516a59f5b8a = L.marker(
+                [12.9074979072173, 77.6011985705485],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_504bd330f91b642e60195dd19a237284 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_76959ec426b898f5fba95516a59f5b8a.bindTooltip(
+                `<div>
+                     Bannerghatta Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76959ec426b898f5fba95516a59f5b8a.setIcon(icon_504bd330f91b642e60195dd19a237284);
+            
+    
+            var marker_d075ca410b4d23e2fa8fd17c1d3db508 = L.marker(
+                [12.9351046982865, 77.6134020502009],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_5d8a5af351fa879452092f1924af63af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d075ca410b4d23e2fa8fd17c1d3db508.bindTooltip(
+                `<div>
+                     Koramangala_2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d075ca410b4d23e2fa8fd17c1d3db508.setIcon(icon_5d8a5af351fa879452092f1924af63af);
+            
+    
+            var marker_dd0c4b0bbc84dac88eec7e9339935f2c = L.marker(
+                [12.9472988464955, 77.5685995588955],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_dd63b45556790962c3fc77471491854c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dd0c4b0bbc84dac88eec7e9339935f2c.bindTooltip(
+                `<div>
+                     Gandhi Bazaar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd0c4b0bbc84dac88eec7e9339935f2c.setIcon(icon_dd63b45556790962c3fc77471491854c);
+            
+    
+            var marker_6aff1b80ded97342823c03a846a7e6dd = L.marker(
+                [12.8854788026549, 77.5636895043175],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_0da5d0a0a7f6dd63320e35b409d11e31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6aff1b80ded97342823c03a846a7e6dd.bindTooltip(
+                `<div>
+                     Konanakunte
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6aff1b80ded97342823c03a846a7e6dd.setIcon(icon_0da5d0a0a7f6dd63320e35b409d11e31);
+            
+    
+            var marker_c7b80d2d85c3bafb79b26b4a8ab847ff = L.marker(
+                [12.7969243, 77.3632306],
+                {
+}
+            ).addTo(map_dd13a3b01fdb86e538284915788eb44d);
+        
+    
+            var icon_02990b91e69e34dc52cb8ef54116856c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c7b80d2d85c3bafb79b26b4a8ab847ff.bindTooltip(
+                `<div>
+                     Depot (Bidadi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7b80d2d85c3bafb79b26b4a8ab847ff.setIcon(icon_02990b91e69e34dc52cb8ef54116856c);
+            
+</script>
+</html>
